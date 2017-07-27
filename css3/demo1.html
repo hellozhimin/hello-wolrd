@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪元素和伪类</title>
+	<style>
+		.div1:hover{
+			background: red;
+		}
+		.div1:after{
+			content:"hello world";
+			position:absolute;
+			border:1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">伪元素和伪类</div>
+</body>
+</html>
