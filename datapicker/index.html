@@ -4,15 +4,27 @@
 	<meta charset="UTF-8">
 	<title>datapicker</title>
 	<link rel="stylesheet" href="style.css">
+	<style>
+		.datepicker{
+			border:1px solid #ccc;
+			border-radius: 4px;
+			padding:5px;
+			height:24px;
+			line-height: 24px;
+			width:230px;
+		}
+		.datepicker:focus{
+			outline:0 none;
+			border:1px solid #1abc9c;
+		}
+	</style>
 </head>
 <body>
-	<div class="ui-datapicker-wrapper">
-	</div>
+	<input type="text" class="datepicker">
 	<script src="./date.js"></script>
 	<script src="./main.js"></script>
 	<script>
-	    datapicker.init(document.querySelector('.ui-datapicker-wrapper'));
-		// console.log(datapicker)
+	    datapicker.init(".datepicker");
 		datapicker.logText();
 	</script>
 </body>
